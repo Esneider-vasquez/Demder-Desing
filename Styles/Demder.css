@@ -1,0 +1,513 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #282828;
+  font-size: 16px;
+  font-family: texto;
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-color: #e2bfb3a1;
+}
+
+/* Fuente de los titulos */
+@font-face {
+  font-family: "Quilon-Variable";
+  src: url("../Fuente/Quilon-Variable.ttf");
+}
+/* Fin fuente de los titulos */
+@font-face {
+  font-family: "texto";
+  src: url("../Fuente/humnst777-bt-roman.ttf");
+}
+/* fuente de los textos */
+
+/* Fin fuente de los textos */
+/* Menú */
+.menu {
+  position: sticky;
+  font-family: Quilon-Variable;
+  top: 0;
+  z-index: 10000;
+  background-color: #e2bfb3eb;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0px 2px 5px #27353f;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-image {
+  height: 60px;
+  width: 60px;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #96a0cc;
+  color: #fff;
+}
+
+.btn-demder-desing {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Sección de Bienvenida */
+.bienvenida {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #e2bfb3;
+  padding: 3% 0% 3% 0;
+}
+
+/* Contenido del lado izquierdo */
+.contenido-izquierda {
+  width: 45%;
+  text-align: center;
+}
+.margen-bienvenida {
+  margin: 0; /* Elimina márgenes adicionales */
+}
+.titulo-bienvenida {
+  color: #27353f;
+  font-size: 35px;
+  font-weight: 1;
+  line-height: 1.2;
+  font-family: Quilon-Variable;
+}
+
+.contenido-izquierda p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #27353f;
+}
+
+.enfasis {
+  color: #383e58;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+/* Contenido del lado derecho */
+.contenido-derecha {
+  width: 35%;
+  text-align: center;
+  padding-left: 20px;
+}
+.contenedor-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.img {
+  width: 80%; /* Imagen más proporcionada */
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(150, 160, 204, 0.5);
+  transition: box-shadow 0.3s ease;
+}
+
+.img:hover {
+  box-shadow: 0px 4px 30px rgba(206, 127, 90, 0.6);
+  transform: scale(1.1); /* Agrega un efecto de zoom al pasar el mouse */
+}
+
+.titulo-derecha {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 0.5rem; /* Ajuste con la imagen */
+  padding-top: 3%;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .bienvenida {
+    flex-direction: column; /* Apila el contenido */
+    align-items: center;
+    text-align: center;
+  }
+
+  .contenido-izquierda,
+  .contenido-derecha {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  .titulo-bienvenida {
+    font-size: 2rem;
+  }
+
+  .img {
+    width: 90%;
+  }
+}
+
+.texto_porque_elegirnos {
+  color: #383e58;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.img-porque {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 20px rgba(150, 160, 204, 0.5);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  object-fit: cover; /* Asegura que la imagen se recorte correctamente */
+}
+
+.img-porque:hover {
+  box-shadow: 0px 4px 30px rgba(206, 127, 90, 0.6);
+  transform: scale(1.1); /* Agrega un efecto de zoom al pasar el mouse */
+}
+
+/*Footer*/
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+/* Servicios */
+.servicios {
+  background-color: #27353f;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+h1.titulo {
+  text-align: center;
+  color: #e2bfb3eb;
+  margin-top: 20px;
+  font-size: 35px;
+  font-family: Quilon-Variable;
+}
+.contenedor-cuadros h2 {
+  font-family: Quilon-Variable;
+}
+
+.contenedor-cuadros {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 5% 0% 5% 0%;
+}
+
+.cuadro {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 25%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-top: 30px;
+}
+
+.cuadro ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.cuadro li {
+  margin: 10px 0;
+  color: #555;
+}
+
+.cuadro button {
+  background-color: #2c3e50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cuadro button:hover {
+  background-color: #e2bfb3;
+}
+
+/* Efecto al pasar el mouse */
+.cuadro:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Cuadro central destacado */
+.cuadro-destacado {
+  transform: scale(1.1);
+  background-color: #ccb158;
+  color: #fff;
+}
+
+.cuadro-destacado h2,
+.cuadro-destacado p,
+.cuadro-destacado li {
+  color: #fff;
+}
+
+.cuadro-destacado button {
+  background-color: #fff;
+  color: #27353f;
+}
+
+.cuadro-destacado button:hover {
+  background-color: #e2bfb3;
+  color: #27353f;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .contenedor-cuadros {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cuadro {
+    width: 80%;
+  }
+}
+/* Footer */
+/* Footer */
+footer {
+  background-color: var(--color-esqueleto);
+  background-size: cover;
+  color: white;
+  padding: 20px 0;
+}
+
+.container__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 0 auto;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra los items en pantallas pequeñas */
+}
+
+.box__footer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.box__footer.text-center {
+  text-align: center;
+}
+
+.box__footer .logo img {
+  width: 180px;
+  margin-bottom: 10px;
+}
+
+.box__footer .terms {
+  font-size: 18px;
+  color: #7a7a7a;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.box__footer h2 {
+  margin-bottom: 20px;
+  color: #242424;
+  font-weight: 700;
+}
+
+.box__footer a {
+  color: #7a7a7a;
+  font-size: 16px;
+  margin: 8px 0;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.box__footer a:hover {
+  opacity: 0.8;
+}
+
+.box__footer a .fab {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+/* Box con redes sociales a la derecha */
+.box__footer.socials-right {
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* Copyright Section */
+.box__copyright {
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 30px;
+  border-top: 1px solid #7a7a7a;
+}
+
+.box__copyright p {
+  color: #7a7a7a;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.box__copyright hr {
+  border: none;
+  height: 1px;
+  background-color: #7a7a7a;
+  margin-bottom: 10px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .container__footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box__footer {
+    text-align: center;
+  }
+
+  .box__footer.socials-right {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .box__footer .terms {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .box__footer a {
+    font-size: 14px;
+  }
+
+  .box__footer h2 {
+    font-size: 16px;
+  }
+
+  .box__copyright p {
+    font-size: 12px;
+  }
+}
+
+/* footer */
+footer {
+  background-color: #f8f9fa; /* Fondo claro */
+  color: #2c3e50; /* Color del texto */
+  padding: 20px;
+  text-align: center;
+}
+
+footer h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center; /* Título centrado */
+}
+
+.padre-padre-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Texto a la izquierda, redes a la derecha */
+  align-items: center;
+  gap: 20px; /* Espaciado entre columnas */
+}
+
+.contenido-texto {
+  flex: 1;
+  text-align: left; /* Texto alineado a la izquierda */
+  padding: 10px;
+  max-width: 50%; /* Limita el ancho del texto */
+}
+
+.contenido-redes {
+  flex: 1;
+  text-align: center; /* Redes centradas */
+  padding: 10px;
+  max-width: 50%; /* Limita el ancho de las redes */
+}
+
+.contenedor-gmail ul {
+  list-style: none; /* Quitar viñetas */
+  padding: 0;
+}
+
+.contenedor-gmail ul li {
+  margin: 10px 0;
+}
+
+.contenedor-gmail ul li a {
+  color: #2c3e50;
+  text-decoration: none; /* Sin subrayado */
+}
+
+.contenedor-gmail ul li a:hover {
+  color: #007bff; /* Color al pasar el mouse */
+  text-decoration: underline; /* Subrayado al hover */
+}
+
+.img-redes {
+  width: 40px; /* Tamaño del ícono */
+  height: auto;
+  margin-right: 10px;
+}
+/* Fin del footer */
+
+/* whatsapp */
+.wpp {
+  position: fixed; /* Fija el elemento en la pantalla */
+  bottom: 20px; /* Espacio desde el borde inferior */
+  right: 20px; /* Espacio desde el borde derecho */
+  z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+}
+
+.img-redes-wpp {
+  width: 70px; /* Tamaño del ícono (ajústalo según sea necesario) */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Agrega una pequeña animación al pasar el cursor */
+}
+
+.img-redes-wpp:hover {
+  transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
+}
